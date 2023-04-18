@@ -1,0 +1,15 @@
+class aluno:
+  def conta(matricula,aluno,notaprova1,notaprova2,notatrabalho):
+    aluno=input("digite seu nome ")
+    matricula=int(input("digite sua matricula "))
+    notaprova1=float(input("digite sua nota da prova1 "))
+    notaprova2=float(input("digite sua nota da prova2 "))
+    notatrabalho=float(input("digite sua nota do trabalho "))
+    media=(notaprova1*2.5+notaprova2*2.5+notatrabalho*2.0)/7.0
+    print(media)
+    if media>=1 and media<7:
+      print(f"O aluno {aluno} de matricula {matricula} foi para a final ele precisa de {7-media} para passar de ano")
+    else:
+      print(f"o aluno {aluno} de matricula{matricula} passou com a média {media}")
+  conta("","","","","")
+    
